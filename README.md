@@ -26,7 +26,22 @@ HTTP status codes for success and errors scenarios.
 
 ## System Requirement
 - Java 21
+- Make sure to change `.env` file to your postgresql database connection
 - Hope and prayer because this gradle image has so many critical vulnerabilities (DO NOT USE THIS IMAGE IN REAL WORLD)
+
+### Env file
+It is important since our database connection will use the config from this file.
+```
+#This is for app config
+DB_URL=jdbc:postgresql://<YOUR_DB_URL>
+DB_USER=<YOUR_DB_USERNAME>
+DB_PASSWORD=<YOUR_DB_PASSWORD>
+
+#This is for setup postgres database container
+POSTGRES_DB: <YOUR_POSTGRESQL_DB>
+POSTGRES_USER: <YOUR_POSTGRESQL_USERNAME>
+POSTGRES_PASSWORD: <YOUR_POSTGRESQL_PASSWORD>
+```
 
 ## How to run
 You can run from docker, docker compose or even your favourite IDE
