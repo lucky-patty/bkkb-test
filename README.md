@@ -17,6 +17,12 @@ Backend API created with Spring Boot framework for technical assignment.
 6. Response Format: Use JSON for request and response bodies, include appropriate
 HTTP status codes for success and errors scenarios.
 ```
+### Bonus Tasks
+```
+1. Add unit tests for those API endpoints. ✔️
+2. Write a Dockerfile for wrapping up those services as a Docker container. ✔️
+3. Write a CI/CD script for deployment in any preferred framework/platform. ❌ (It exceeds the assignment time's limit 😭)
+```
 
 ## System Requirement
 - Java 21
